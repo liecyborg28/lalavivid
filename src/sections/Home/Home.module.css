@@ -207,16 +207,19 @@
     .customerInfo>b,
     .depositInfo>b {
         margin-left: 16px;
+        margin-right: 16px;
     }
 
     .businessInfo>span,
     .customerInfo>span,
     .depositInfo>span {
         margin-left: 16px;
+        margin-right: 16px;
     }
 
     .depositInfo>div {
         margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
