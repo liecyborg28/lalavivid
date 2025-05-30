@@ -89,18 +89,20 @@ function HomeCarousel() {
     //       borderRadius: 2, // <--- pastikan juga di sini
     //     },
     //   }}>
-    <Carousel autoplay arrows>
-      {slides.map((e, i) => (
-        // <Carousel.Slide key={i}>
-        <img
-          key={i}
-          src={isMobile ? e.imageUrl.mobile : e.imageUrl.desktop}
-          alt={`Slide ${i + 1}`}
-          style={{ width: "100%", height: "auto", display: "block" }}
-        />
-        // </Carousel.Slide>
-      ))}
-    </Carousel>
+    <div style={{ backgroundColor: "white" }}>
+      <Carousel autoplay arrows>
+        {slides.map((e, i) => (
+          // <Carousel.Slide key={i}>
+          <img
+            key={i}
+            src={isMobile ? e.imageUrl.mobile : e.imageUrl.desktop}
+            alt={`Slide ${i + 1}`}
+            style={{ width: "100%", height: "auto", display: "block" }}
+          />
+          // </Carousel.Slide>
+        ))}
+      </Carousel>
+    </div>
   );
 }
 
@@ -263,7 +265,7 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <Container className={styles.inner}>
-        <img src="/src/assets/logo/logo.svg" alt="logo" height={24} />
+        <img src="/logo/logo.svg" alt="logo" height={24} />
         <Group
           gap={0}
           className={styles.links}
