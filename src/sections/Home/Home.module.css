@@ -166,7 +166,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: calc(960px - calc(16px * 2));
-    margin-left: 16px;
     gap: 2rem;
 }
 
