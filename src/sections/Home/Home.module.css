@@ -201,6 +201,25 @@
     background-color: #f3f4f6;
 }
 
+@media (max-width: 960px) {
+
+    .businessInfo>b,
+    .customerInfo>b,
+    .depositInfo>b {
+        margin-left: 16px;
+    }
+
+    .businessInfo>span,
+    .customerInfo>span,
+    .depositInfo>span {
+        margin-left: 16px;
+    }
+
+    .depositInfo>div {
+        margin-left: 16px;
+    }
+}
+
 .footer {
     border-top: 1px solid #dee2e6;
     /* fallback warna gray terang */
