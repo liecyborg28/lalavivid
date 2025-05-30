@@ -1,0 +1,41 @@
+/* AppHeader.module.css */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.headerInner {
+    width: 100%;
+    /* max-width: calc(100vw - 120px); */
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    content: url(/src/assets/logo/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    margin-left: 16px;
+}
+
+.menuButton {
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.desktopMenu {
+    border-bottom: none;
+}

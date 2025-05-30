@@ -1,0 +1,228 @@
+.home {
+    padding-top: 64px;
+    background-image: url(/home/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.carouselItem {
+    width: 100%;
+    min-height: 300px;
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bestProducts {
+    padding-top: calc(64px + 8px);
+    padding-bottom: calc(64px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bestProductsTitleContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.bestProductsTitleContainer>b {
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bestProductsTitleContainer>span {
+    color: #6b7280;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.bestProductsContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: calc(960px - calc(16px * 2));
+    margin: 0 16px;
+    gap: 1rem;
+    padding-top: 16px;
+}
+
+.bestProductsContentItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.bestProductsContentItemImageContainer {
+    overflow: hidden;
+    border-radius: 8px;
+    width: calc(960px * 0.22);
+    min-width: 180px;
+    aspect-ratio: 1 / 1;
+    background-color: whitesmoke;
+}
+
+.bestProductsContentItemImage {
+    width: calc(960px * 0.22);
+    min-width: 180px;
+    aspect-ratio: 1 / 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.75s;
+}
+
+.bestProductsContentItemImage:hover {
+    transform: scale(1.2);
+}
+
+.bestProductsContentItemName {
+    font-weight: bold;
+    width: calc(960px * 0.22);
+    min-width: 180px;
+    color: #1a1a1a;
+    /* text-align: center; */
+}
+
+.bestProductsContentItemDesc {
+    color: #6b7280;
+    width: calc(960px * 0.22);
+    min-width: 180px;
+    font-size: 0.75rem;
+}
+
+.bestProductsContentItemOffer {
+    display: flex;
+}
+
+.bestProductsContentItemOfferDiscount {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.bestProductsContentItemOfferPriceBefore {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.bestProductsContentItemOfferPrice {
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 1.1rem;
+}
+
+.brandStory {
+    padding-top: calc(64px + 8px);
+    padding-bottom: calc(64px);
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+}
+
+.brandStory>* {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.brandStory>b {
+    font-size: 1.8rem;
+}
+
+.brandStory>span {
+    margin-top: 18px;
+    font-size: 1.1rem;
+}
+
+.brandStory>button {
+    cursor: pointer;
+    margin-top: 24px;
+    border: 2px solid #1a1a1a;
+    border-radius: 100px;
+    width: 100px;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 16px;
+    width: 200px;
+}
+
+.info {
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(960px - calc(16px * 2));
+    margin-left: 16px;
+    gap: 2rem;
+}
+
+.infoContainer>* {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoContainer>img {
+    height: 24px;
+}
+
+.businessInfo>b,
+.customerInfo>b,
+.depositInfo>b {
+    font-size: 0.9rem;
+    color: #1a1a1a;
+}
+
+.businessInfo>span,
+.customerInfo>span,
+.depositInfo>span {
+    font-size: 0.7rem;
+    color: #6b7280;
+}
+
+.depositInfo>div {
+    margin-top: 8px;
+    font-size: 0.7rem;
+    color: #4b5563;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #f3f4f6;
+}
+
+.footer {
+    border-top: 1px solid #dee2e6;
+    /* fallback warna gray terang */
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    /* asumsikan var(--mantine-spacing-xl) = 32px */
+    padding-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+    .inner {
+        flex-direction: column;
+    }
+
+    .links {
+        margin-top: 16px;
+        /* asumsikan var(--mantine-spacing-md) = 16px */
+    }
+}
