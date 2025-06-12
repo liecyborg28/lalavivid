@@ -1,36 +1,32 @@
 /* AppHeader.module.css */
 
 .header {
-    position: fixed;
     width: 100%;
-    z-index: 100;
-    padding: 0;
-    background-color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    z-index: 999;
     display: flex;
     justify-content: center;
 }
 
 .headerInner {
     width: 100%;
-    /* max-width: calc(100vw - 120px); */
-    max-width: 960px;
-    display: flex;
-    justify-content: space-between;
+    height: var(--size-ultra-large);
+    max-width: var(--max-width);
     align-items: center;
-    height: 64px;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
-    height: 24px;
-    margin-left: 16px;
+    height: var(--size-large);
+    margin-left: var(--size-medium);
 }
 
 .menuButton {
-    font-size: 24px;
-    margin-right: 16px;
+    font-size: var(--size-large);
+    margin-right: var(--size-medium);
 }
 
 .desktopMenu {

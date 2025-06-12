@@ -1,5 +1,5 @@
 .home {
-    padding-top: 64px;
+    padding-top: var(--size-ultra-large);
     background-image: url(/home/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,15 +9,15 @@
 .carouselItem {
     width: 100%;
     min-height: 300px;
-    background-color: #333;
+    background-color: var(--background-blank);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bestProducts {
-    padding-top: calc(64px + 8px);
-    padding-bottom: calc(64px);
-    background-color: white;
+    padding-top: calc(var(--size-ultra-large) + var(--size-small));
+    padding-bottom: calc(var(--size-ultra-large));
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,13 +29,13 @@
 }
 
 .bestProductsTitleContainer>b {
-    color: #1a1a1a;
+    color: var(--text-color-primary);
     font-size: 1.5rem;
     text-align: center;
 }
 
 .bestProductsTitleContainer>span {
-    color: #6b7280;
+    color: var(--text-color-secondary);
     font-size: 0.9rem;
     text-align: center;
 }
@@ -45,10 +45,10 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    max-width: calc(960px - calc(16px * 2));
-    margin: 0 16px;
+    max-width: var(--max-width-content);
+    margin: 0 var(--size-medium);
     gap: 1rem;
-    padding-top: 16px;
+    padding-top: var(--size-medium);
 }
 
 .bestProductsContentItem {
@@ -58,15 +58,15 @@
 
 .bestProductsContentItemImageContainer {
     overflow: hidden;
-    border-radius: 8px;
-    width: calc(960px * 0.22);
+    border-radius: var(--size-small);
+    width: calc(var(--max-width) * 0.22);
     min-width: 180px;
     aspect-ratio: 1 / 1;
     background-color: whitesmoke;
 }
 
 .bestProductsContentItemImage {
-    width: calc(960px * 0.22);
+    width: calc(var(--max-width) * 0.22);
     min-width: 180px;
     aspect-ratio: 1 / 1;
     background-position: center;
@@ -81,15 +81,14 @@
 
 .bestProductsContentItemName {
     font-weight: bold;
-    width: calc(960px * 0.22);
+    width: calc(var(--max-width) * 0.22);
     min-width: 180px;
-    color: #1a1a1a;
-    /* text-align: center; */
+    color: var(--text-color-primary);
 }
 
 .bestProductsContentItemDesc {
-    color: #6b7280;
-    width: calc(960px * 0.22);
+    color: var(--text-color-secondary);
+    width: calc(var(--max-width) * 0.22);
     min-width: 180px;
     font-size: 0.75rem;
 }
@@ -99,27 +98,27 @@
 }
 
 .bestProductsContentItemOfferDiscount {
-    color: #e74c3c;
+    color: var(--text-color-danger);
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .bestProductsContentItemOfferPriceBefore {
-    color: #9ca3af;
+    color: var(--text-color-disable);
     text-decoration: line-through;
     font-size: 0.9rem;
 }
 
 .bestProductsContentItemOfferPrice {
-    color: #1a1a1a;
+    color: var(--text-color-primary);
     font-weight: bold;
-    margin-left: 8px;
+    margin-left: var(--size-small);
     font-size: 1.1rem;
 }
 
 .brandStory {
-    padding-top: calc(64px + 8px);
-    padding-bottom: calc(64px);
+    padding-top: calc(var(--size-ultra-large) + var(--size-small));
+    padding-bottom: calc(var(--size-ultra-large));
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -128,7 +127,7 @@
 
 .brandStory>* {
     text-align: center;
-    color: #1a1a1a;
+    color: var(--text-color-primary);
 }
 
 .brandStory>b {
@@ -136,28 +135,28 @@
 }
 
 .brandStory>span {
-    margin-top: 18px;
+    margin-top: var(--size-small);
     font-size: 1.1rem;
 }
 
 .brandStory>button {
     cursor: pointer;
-    margin-top: 24px;
-    border: 2px solid #1a1a1a;
+    margin-top: var(--size-large);
+    border: var(--size-ultra-small) solid var(--text-color-primary);
     border-radius: 100px;
     width: 100px;
-    color: #1a1a1a;
+    color: var(--text-color-primary);
     font-size: 1.1rem;
     font-weight: bold;
     background-color: transparent;
-    padding: 16px;
+    padding: var(--size-medium);
     width: 200px;
 }
 
 .info {
     background-color: white;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: var(--size-medium);
+    padding-bottom: var(--size-medium);
     display: flex;
     justify-content: center;
 }
@@ -165,7 +164,7 @@
 .infoContainer {
     display: flex;
     flex-wrap: wrap;
-    max-width: calc(960px - calc(16px * 2));
+    max-width: var(--max-width-content);
     gap: 2rem;
 }
 
@@ -175,64 +174,64 @@
 }
 
 .infoContainer>img {
-    height: 24px;
+    height: var(--size-large);
 }
 
 .businessInfo>b,
 .customerInfo>b,
 .depositInfo>b {
     font-size: 0.9rem;
-    color: #1a1a1a;
+    color: var(--text-color-primary);
 }
 
 .businessInfo>span,
 .customerInfo>span,
 .depositInfo>span {
     font-size: 0.7rem;
-    color: #6b7280;
+    color: var(--text-color-secondary);
 }
 
 .depositInfo>div {
-    margin-top: 8px;
+    margin-top: var(--size-small);
     font-size: 0.7rem;
-    color: #4b5563;
-    padding: 4px;
-    border-radius: 4px;
-    background-color: #f3f4f6;
+    color: var(--text-color-highlight);
+    padding: var(--size-extra-small);
+    border-radius: var(--size-extra-small);
+    background-color: var(--background-color-highlight);
 }
 
-@media (max-width: 960px) {
+@media (max-width: var(--max-width)) {
 
     .businessInfo>b,
     .customerInfo>b,
     .depositInfo>b {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: var(--size-medium);
+        margin-right: var(--size-medium);
     }
 
     .businessInfo>span,
     .customerInfo>span,
     .depositInfo>span {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: var(--size-medium);
+        margin-right: var(--size-medium);
     }
 
     .depositInfo>div {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: var(--size-medium);
+        margin-right: var(--size-medium);
     }
 }
 
 .footer {
-    border-top: 1px solid #dee2e6;
+    border-top: var(--border);
 }
 
 .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: var(--size-extra-large);
+    padding-bottom: var(--size-extra-large);
 }
 
 @media (max-width: 576px) {
@@ -241,6 +240,6 @@
     }
 
     .links {
-        margin-top: 16px;
+        margin-top: var(--size-medium);
     }
 }
