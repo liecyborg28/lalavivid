@@ -24,9 +24,6 @@
 }
 
 .logo {
-    content: url(/public/logo/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 24px;
     margin-left: 16px;
 }

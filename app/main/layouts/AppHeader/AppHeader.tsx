@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
 import { useState, useEffect } from "react";
 import { Layout, Menu, Drawer, Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
@@ -37,8 +39,7 @@ const AppHeader = () => {
   return (
     <Header className={styles.header}>
       <div className={styles.headerInner}>
-        <div className={styles.logo}></div>
-
+        <img src="/logo/logo.svg" alt="logo" className={styles.logo} />
         {isMobile ? (
           <>
             <Button

@@ -225,7 +225,6 @@
 
 .footer {
     border-top: 1px solid #dee2e6;
-    /* fallback warna gray terang */
 }
 
 .inner {
@@ -233,7 +232,6 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 32px;
-    /* asumsikan var(--mantine-spacing-xl) = 32px */
     padding-bottom: 32px;
 }
 
@@ -244,6 +242,5 @@
 
     .links {
         margin-top: 16px;
-        /* asumsikan var(--mantine-spacing-md) = 16px */
     }
 }

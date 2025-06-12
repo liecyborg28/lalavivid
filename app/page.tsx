@@ -1,6 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+"use client";
+// import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { Carousel } from "antd";
-// import { Carousel } from "@mantine/carousel";
 import styles from "./Home.module.css";
 import "@mantine/carousel/styles.css";
 import { motion, useInView } from "framer-motion";
@@ -60,35 +63,6 @@ function HomeCarousel() {
   ];
 
   return (
-    // <Carousel
-    //   withIndicators
-    //   loop
-    //   slideSize="100%"
-    //   active={active}
-    //   onSlideChange={setActive}
-    //   styles={{
-    //     arrow: {
-    //       backgroundColor: "rgba(255, 255, 255, 1)",
-    //       boxShadow: "0 2px 8px rgba(0, 0, 0, 0.25)",
-    //       color: "rgba(0, 0, 0, 0.9)",
-    //       display: "flex",
-    //       alignItems: "center",
-    //       justifyContent: "center",
-    //     },
-    //     control: {
-    //       color: "rgba(0, 0, 0, 0.9)",
-    //     },
-    //     indicator: {
-    //       backgroundColor: "rgba(0, 0, 0, 0.7)", // hitam transparan
-    //       width: 16,
-    //       height: 6,
-    //       borderRadius: 5, // <--- ini wajib agar tidak bulat
-    //     },
-    //     indicatorActive: {
-    //       backgroundColor: "rgba(0, 0, 0, 0.9)", // hitam solid
-    //       borderRadius: 2, // <--- pastikan juga di sini
-    //     },
-    //   }}>
     <div style={{ backgroundColor: "white" }}>
       <Carousel autoplay arrows>
         {slides.map((e, i) => (
@@ -99,7 +73,6 @@ function HomeCarousel() {
             alt={`Slide ${i + 1}`}
             style={{ width: "100%", height: "auto", display: "block" }}
           />
-          // </Carousel.Slide>
         ))}
       </Carousel>
     </div>
@@ -157,7 +130,7 @@ function BestProducts() {
     <div className={styles.bestProducts}>
       <div className={styles.bestProductsTitleContainer}>
         <b>Best Products</b>
-        <span>Introducting Ravid's best products</span>
+        <span>Introducting Ravid&apos;s best products</span>
       </div>
       <motion.div
         ref={ref}
@@ -265,7 +238,11 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <Container className={styles.inner}>
-        <img src="/logo/logo.svg" alt="logo" height={24} />
+        <img
+          src="/logo/logo.svg"
+          alt="logo"
+          style={{ height: "24px", width: "auto", display: "block" }}
+        />
         <Group
           gap={0}
           className={styles.links}
